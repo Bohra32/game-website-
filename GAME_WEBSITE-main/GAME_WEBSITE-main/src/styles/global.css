@@ -1,0 +1,72 @@
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif !important;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  color: white;
+  overflow-x: hidden; 
+}
+
+
+.navbar {  
+  z-index: 1050;
+}
+
+
+.games-content::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (max-width: 992px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; 
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 15px;
+    background: linear-gradient(to bottom, #6b4f4f, #2b2929);
+  }
+
+  .games-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-sidebar {
+    padding: 10px;
+  }
+
+  .games-content {
+    padding: 10px;
+  }
+
+  .row {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .game-card img {
+    height: 150px;
+  }
+
+  .game-card-content {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
